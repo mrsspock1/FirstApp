@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane layoutX="-7.0" layoutY="-8.0" prefHeight="414.0" prefWidth="613.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Losuj sentencję">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: green;">
+                     <children>
+                        <Button fx:id="buttonHello" layoutX="283.0" layoutY="251.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="48.0" text="Losuj" textAlignment="CENTER" />
+                        <Label fx:id="labelWords" alignment="CENTER" contentDisplay="CENTER" layoutX="104.0" layoutY="108.0" prefHeight="113.0" prefWidth="405.0" style="-fx-background-color: yellow;" text="Sentencja" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab text="Dodaj sentencję">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="enterWords" layoutX="284.0" layoutY="145.0" prefHeight="36.0" prefWidth="210.0" promptText="Wpisz sentencję..." />
+                        <Button fx:id="addWords" layoutX="75.0" layoutY="146.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="120.0" text="Dodaj" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
